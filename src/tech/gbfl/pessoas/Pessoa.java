@@ -1,12 +1,15 @@
 package tech.gbfl.pessoas;
 
+import tech.gbfl.Composicao.Endereco;
+import tech.gbfl.Composicao.Telefone;
+
 public class Pessoa {
 	private String nome;
 	private String dataNascimento;
-	private String endereco;
-	private String telefone;
+	private Endereco endereco;
+	private Telefone telefone;
 	
-	public void cadastrar(String nome, String dataNascimento, String endereco, String telefone) {
+	public void cadastrar(String nome, String dataNascimento, Endereco endereco, Telefone telefone) {
 		this.nome = nome;
 		this.dataNascimento = dataNascimento;
 		this.endereco = endereco;
@@ -35,19 +38,19 @@ public class Pessoa {
 		this.dataNascimento = dataNascimento;
 	}
 
-	public String getEndereco() {
+	public Endereco getEndereco() {
 		return endereco;
 	}
 
-	public void setEndereco(String endereco) {
-		this.endereco = endereco;
+	public void setEndereco(Endereco string) {
+		this.endereco = string;
 	}
 
-	public String getTelefone() {
+	public Telefone getTelefone() {
 		return telefone;
 	}
 
-	public void setTelefone(String telefone) {
+	public void setTelefone(Telefone telefone) {
 		this.telefone = telefone;
 	}
 	

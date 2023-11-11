@@ -11,8 +11,13 @@ public class AplicacaoMain {
 		Funcionario objNovoFunc01 = new Funcionario();
 		Cliente objNovoCli01 = new Cliente();
 		
-		objNovoFunc01.cadastrar(01, "Prof", 15, "02/02/2022", "Chorão", "18/09/1986", "Aqui", "09090909");
-		objNovoCli01.cadastrar("C23", "Professor", "João", "13/12/1992", "Casa", "89898989898");
+//		objNovoFunc01.cadastrar(01, "Prof", 15, "02/02/2022", "Chorão", "18/09/1986", "Aqui", "09090909");
+//		objNovoCli01.cadastrar("C23", "Professor", "João", "13/12/1992", "Casa", "89898989898");
+		
+		objNovoCli01.getNome();
+		objNovoCli01.getCodigo();
+		objNovoCli01.getEndereco().getCep();
+		
 		
 
 	}
