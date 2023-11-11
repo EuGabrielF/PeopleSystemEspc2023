@@ -1,22 +1,28 @@
 package tech.gbfl.Composicao;
 
 public class Telefone {
-	private String DDD;
-	private String numero;
+	private String ddd;
+	private String telefone;
 	
+	
+	
+	public Telefone(String ddd, String telefone) {
+		this.ddd = ddd;
+		this.telefone = telefone;
+	}
 	public String getDDD() {
-		return DDD;
+		return ddd;
 	}
-	public void setDDD(String dDD) {
-		DDD = dDD;
+	public void setDDD(String ddd) {
+		ddd = ddd;
 	}
-	public String getNumero() {
-		return numero;
+	public String getTelefone() {
+		return telefone;
 	}
-	public void setNumero(String numero) {
-		this.numero = numero;
+	public void setTelefone(String numero) {
+		this.telefone = numero;
 	}
 	
 	
-
+	
 }

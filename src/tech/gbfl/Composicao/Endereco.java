@@ -8,6 +8,16 @@ public class Endereco {
 	private String estado;
 	private String pais;
 	
+	public void cadastrarEnd(String rua, String numero, String Cep, String cidade, String estado, String pais) {
+		this.rua = rua;
+		this.numero = numero;
+		this.Cep = Cep;
+		this.cidade = cidade;
+		this.estado = estado;
+		this.pais = pais;
+		
+	}
+	
 	public String getRua() {
 		return rua;
 	}

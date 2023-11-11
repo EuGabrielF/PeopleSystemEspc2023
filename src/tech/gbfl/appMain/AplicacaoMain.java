@@ -16,10 +16,11 @@ public class AplicacaoMain {
 		Cliente objNovoCli01 = new Cliente();
 		Endereco objEndClie01 = new Endereco();
 		LocalDate dataNasc01 = LocalDate.of(2000, 12, 1);
-		Telefone tel01 = new Telefone();
+		Telefone tel01 = new Telefone("12", "122222");
 		
-		objNovoFunc01.cadastrar(1, "cargo", 1000.0, "01\01\01", "nome",
-				dataNasc01, objEndClie01, tel01);
+		objNovoFunc01.cadastrar(1, "Cargo", 1000.0, dataNasc01, "nome", dataNasc01, objEndClie01, tel01);
+		objNovoCli01.cadastrar("C01", "Líder", "Jr.", dataNasc01, objEndClie01, tel01);
+		//objEndCli01.cadastrarEnd();
 		
 		objNovoCli01.getNome();
 		objNovoCli01.getCodigo();

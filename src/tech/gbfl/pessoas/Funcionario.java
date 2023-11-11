@@ -10,10 +10,10 @@ public class Funcionario extends Pessoa{
 	private int matricula;
 	private String cargo;
 	private double salario;
-	private String dataAdmissao;
+	private LocalDate dataAdmissao;
 	
 	public void cadastrar(int matricula, String cargo, double salario, 
-			String dataAdmissao, String nome, LocalDate dataNascimento, 
+			LocalDate dataAdmissao, String nome, LocalDate dataNascimento, 
 			Endereco endereco, Telefone telefone) {
 		this.matricula = matricula;
 		this.cargo = cargo;
@@ -42,11 +42,11 @@ public class Funcionario extends Pessoa{
 		this.matricula = matricula;
 	}
 
-	public String getDataAdmissao() {
+	public LocalDate getDataAdmissao() {
 		return dataAdmissao;
 	}
 
-	public void setDataAdmissao(String dataAdmissao) {
+	public void setDataAdmissao(LocalDate dataAdmissao) {
 		this.dataAdmissao = dataAdmissao;
 	}
 
