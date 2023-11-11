@@ -1,5 +1,7 @@
 package tech.gbfl.pessoas;
 
+import java.time.LocalDate;
+
 import tech.gbfl.Composicao.Endereco;
 import tech.gbfl.Composicao.Telefone;
 
@@ -7,13 +9,14 @@ public class Cliente extends Pessoa{
 	private String codigo;
 	private String profissão;
 	
-	public void cadastrar(String codigo, String profissao, String nome,String dataNascimento, Endereco endereco, Telefone telefone) {
+	public void cadastrar(String codigo, String profissao, String nome,LocalDate dataNascimento, Endereco endereco, Telefone telefone) {
 		this.codigo = codigo;
 		this.profissão = profissao;
-		setNome(nome);
-		setDataNascimento(dataNascimento);
-		setEndereco(endereco);
-		setTelefone(telefone);	
+			//setNome(nome);
+			//setDataNascimento(dataNascimento);
+			//setEndereco(endereco);
+			//setTelefone(telefone);
+		cadastrar(nome, dataNascimento, endereco, telefone);
 	}
 	
 	public String getCodigo() {

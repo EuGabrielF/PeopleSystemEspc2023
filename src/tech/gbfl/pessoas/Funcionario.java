@@ -1,5 +1,7 @@
 package tech.gbfl.pessoas;
 
+import java.time.LocalDate;
+
 import tech.gbfl.Composicao.Endereco;
 import tech.gbfl.Composicao.Telefone;
 
@@ -10,15 +12,18 @@ public class Funcionario extends Pessoa{
 	private double salario;
 	private String dataAdmissao;
 	
-	public void cadastrar(int matricula, String cargo, double salario, String dataAdmissao, String nome, String dataNascimento, Endereco string, Telefone telefone) {
+	public void cadastrar(int matricula, String cargo, double salario, 
+			String dataAdmissao, String nome, LocalDate dataNascimento, 
+			Endereco endereco, Telefone telefone) {
 		this.matricula = matricula;
 		this.cargo = cargo;
 		this.salario = salario;
 		this.dataAdmissao = dataAdmissao;
-		setNome(nome);
-		setDataNascimento(dataNascimento);
-		setEndereco(string);
-		setTelefone(telefone);
+		//setNome(nome);
+		//setDataNascimento(dataNascimento);
+		//setEndereco(string);
+		//setTelefone(telefone);
+		cadastrar(nome, dataNascimento, endereco, telefone);
 	}
 	
 	public void reajustarSalario(double percentual) {
