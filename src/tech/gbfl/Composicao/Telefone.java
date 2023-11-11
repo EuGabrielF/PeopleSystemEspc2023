@@ -22,6 +22,10 @@ public class Telefone {
 	public void setTelefone(String numero) {
 		this.telefone = numero;
 	}
+	@Override
+	public String toString() {
+		return "("+ ddd +") " + telefone;
+	}
 	
 	
 	
