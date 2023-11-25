@@ -4,6 +4,7 @@ import java.time.LocalDate;
 
 import tech.gbfl.Composicao.Endereco;
 import tech.gbfl.Composicao.Telefone;
+import tech.gbfl.estruturas.ListaDeTelefonesNaoOrdenados;
 import tech.gbfl.pessoas.Cliente;
 import tech.gbfl.pessoas.Funcionario;
 import tech.gbfl.pessoas.Pessoa;
@@ -12,7 +13,7 @@ public class AplicacaoMain {
 
 	public static void main(String[] args) {
 		
-		Funcionario objNovoFunc01 = new Funcionario();
+/*		Funcionario objNovoFunc01 = new Funcionario();
 		Cliente objNovoCli01 = new Cliente();
 		Endereco objEndClie01 = new Endereco();
 		LocalDate dataNasc01 = LocalDate.of(2000, 12, 1);
@@ -25,7 +26,14 @@ public class AplicacaoMain {
 		objNovoCli01.getNome();
 		objNovoCli01.getCodigo();
 		objNovoCli01.getEndereco().getCep();
-		objNovoCli01.obterIdade();
+		objNovoCli01.obterIdade();*/
+		
+		ListaDeTelefonesNaoOrdenados minhaLista = new ListaDeTelefonesNaoOrdenados();
+		Telefone telefone1 = new Telefone("11", "1234-5678");
+		Telefone telefone2 = new Telefone("22", "9876-5432");
+		
+		minhaLista.addTelefone(telefone1);
+		minhaLista.addTelefone(telefone2);
 		
 		
 
